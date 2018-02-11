@@ -1,6 +1,5 @@
 import React from 'react'
 import { StyleSheet, Platform, Image, Text, View } from 'react-native'
-import Spinner from 'react-native-spinkit'
 import firebase from 'react-native-firebase'
 import PropTypes from 'prop-types'
 
@@ -23,19 +22,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    if (true) {
-      return <Onboarding />
-    }
-
-    if (false) {
-      return (
-        <View style={styles.container}>
-          <Spinner isVisible={true} size={64} type={'ThreeBounce'} color={'orange'}/>
-        </View>
-      )
-    }
-
-
+    return <Onboarding />
     return <Main />
   }
 }
